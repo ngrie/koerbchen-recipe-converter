@@ -1,0 +1,24 @@
+{
+    "name": "ngrie/koerbchen-recipe-converter",
+    "type": "project",
+    "require": {
+        "php": ">=8.3",
+        "symfony/console": "^7.1",
+        "symfony/uid": "^7.1",
+        "symfony/filesystem": "^7.1",
+        "symfony/http-client": "^7.1",
+        "symfony/string": "^7.1",
+        "symfony/translation-contracts": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ngrie\\KoerbchenRecipeConverter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Niklas Grießer",
+            "email": "niklas@griesser.me"
+        }
+    ]
+}

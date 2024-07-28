@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Ngrie\KoerbchenRecipeConverter\Command\ConvertCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('Körbchen Recipe Converter', '1.0.0');
+$command = new ConvertCommand(
+    __DIR__.'/../var/input',
+    __DIR__.'/../var/output',
+    __DIR__.'/../var/_images',
+);
+
+$application->add($command);
+
+$application->setDefaultCommand($command->getName(), true);
+
+$application->run();
